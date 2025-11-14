@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 name = "axon-tui"
 version = "2.0.0"
 authors = [
-  { name="Your Name", email="you@example.com" },
+  { name="Aniket", email="aniketink@gmail.com" },
 ]
 description = "A blazingly fast, keyboard-driven TUI file navigator with Miller Columns."
 readme = "README.md"
