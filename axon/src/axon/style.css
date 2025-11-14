@@ -1,0 +1,100 @@
+/* style.css */
+
+Screen {
+    background: #282a36;
+    color: #f8f8f2;
+    layout: vertical;
+}
+
+Header {
+    dock: top; height: 1; background: #44475a;
+}
+Header .header--title { color: #50fa7b; }
+Header .header--subtitle { color: #f8f8f2; }
+
+Footer {
+    dock: bottom; height: 1; background: #44475a;
+}
+Footer .footer--key { background: #6272a4; }
+
+#main-container {
+    layout: horizontal;
+    /* vvv FIX: This line tells the container to fill all available vertical space vvv */
+    height: 1fr;
+}
+
+#miller-columns {
+    width: 65%;
+    height: 100%;
+    background: #21222c;
+    overflow-x: auto;
+}
+
+DirectoryBrowser {
+    width: 33%;
+    min-width: 20;
+    height: 100%;
+    border-right: solid #44475a;
+}
+
+DirectoryBrowser:focus {
+    border: heavy #ffb86c;
+}
+
+DirectoryBrowser > ListItem {
+    padding: 0 1;
+}
+
+DirectoryBrowser > .list-view--highlight {
+    background: #44475a;
+}
+
+/* Style for multi-selected items */
+DirectoryBrowser > .selected > Label {
+    background: #ffb86c;
+    color: #282a36;
+    text-style: bold;
+}
+
+#preview {
+    width: 35%;
+    padding: 0 1;
+}
+
+/* Preview Pane Tabs */
+TabbedContent > .tabs-content {
+    padding-top: 1;
+}
+TabbedContent > .tabs-list {
+    background: #21222c;
+}
+TabbedContent Tab {
+    background: #44475a;
+}
+TabbedContent Tab.--active {
+    background: #6272a4;
+    text-style: bold;
+}
+
+/* Git Diff View */
+#diff-view {
+    height: 100%;
+}
+#diff-view GitDiffLine {
+    height: 1;
+}
+
+/* Modals */
+#help-container, #confirmation-dialog, #input-dialog, #bookmarks-dialog, #command-palette {
+    width: 80%;
+    max-width: 80;
+    max-height: 80%;
+    border: thick #bd93f9;
+    background: #282a36;
+    padding: 1;
+}
+
+HelpScreen, ConfirmationScreen, InputScreen, BookmarksScreen, CommandPalette {
+    align: center middle;
+    background: rgba(0, 0, 0, 0.5);
+}

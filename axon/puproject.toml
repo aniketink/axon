@@ -1,0 +1,45 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "axon-tui"
+version = "2.0.0"
+authors = [
+  { name="Your Name", email="you@example.com" },
+]
+description = "A blazingly fast, keyboard-driven TUI file navigator with Miller Columns."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Filesystems",
+    "Topic :: Terminals",
+    "Environment :: Console",
+]
+dependencies = [
+    "textual>=0.50.0",  # Use a recent version of Textual
+    "pygments",
+    "humanize",
+    "chardet",
+    "GitPython",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/your_username/axon"  # Change this
+"Bug Tracker" = "https://github.com/your_username/axon/issues" # Change this
+
+# This section makes 'axon' a runnable command
+[project.scripts]
+axon = "axon.main:run_app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+include-package-data = true
