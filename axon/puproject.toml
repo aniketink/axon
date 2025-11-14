@@ -31,8 +31,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/your_username/axon"  # Change this
-"Bug Tracker" = "https://github.com/your_username/axon/issues" # Change this
+"Homepage" = "https://github.com/aniketink/axon"  # Change this
+"Bug Tracker" = "https://github.com/aniketink/axon/issues" # Change this
 
 # This section makes 'axon' a runnable command
 [project.scripts]
